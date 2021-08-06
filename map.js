@@ -8,8 +8,8 @@ return 2*x;
 
 
 let ans=arr.map(double);
- console.log("original array :" + arr);
- console.log("Map answer :"+ans);
+ console.log("original array :" , arr);
+ console.log("Map answer :",ans);
 
 function coustumMapFunction(arr,fun){
 let coustum=[];
@@ -18,8 +18,8 @@ for(let i=0;i<arr.length;i++){
     coustum.push(fun(arr[i]));
 }
 
-return ans;
+return coustum;
 
 }
 
-console.log("coustum wala map :"+ coustumMapFunction(arr,double));
+console.log("coustum wala map :",coustumMapFunction(arr,double));
